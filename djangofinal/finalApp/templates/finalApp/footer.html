@@ -1,0 +1,126 @@
+{% load static %}
+<!-- logo carousel -->
+	<div class="logo-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="logo-carousel-inner">
+						<div class="single-logo-item" style="margin-top: 30px;">
+							<a href="https://www.multicampus.com/main" target="_blank"><img src="{% static 'assets/img/multicampus.png' %}" alt=""></a>
+						</div>
+						<div class="single-logo-item" style="margin-top: 20px;">
+							<a href="https://www.kamis.or.kr/customer/main/main.do" target="_blank"><img src="{% static 'assets/img/at_logo.png' %}" alt=""></a>
+						</div>
+						<div class="single-logo-item"  style="margin-top: 5px;">
+							<a href="http://tearstop.seoul.go.kr/mulga/" target="_blank"><img src="{% static 'assets/img/seoul_logo.png' %}" alt=""style="width: 50%; height: 50%"></a>
+						</div>
+						<div class="single-logo-item"  style="margin-top: 10px;">
+							<a href="https://oasis.krei.re.kr/index.do" target="_blank"><img src="{% static 'assets/img/oasis_logo.png' %}" style="width: 40%; height: 40%"></a>
+						</div>
+						<div class="single-logo-item" style="margin-top: 22px;">
+							<a href="https://data.kma.go.kr/cmmn/main.do" target="_blank"><img src="{% static 'assets/img/weather_logo.png' %}"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end logo carousel -->
+
+	<!-- footer -->
+	<div class="footer-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box about-widget">
+						<h2 class="widget-title">싼걸비걸</h2>
+						<p>저희는 멀티캠퍼스 서비스 빅데이터 분석 실무반에서 파이널 프로젝트로 농산물 &nbsp; 소비자가 예측을 진행하였습니다.<br/> 이 웹페이지는 데이터 분석 결과와 소비자를 위한 다양한 정보를 담고 있습니다.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box get-in-touch">
+						<h2 class="widget-title">연락처</h2>
+						<ul>
+							<li>서울 강남구 삼성로 534 싹아트센터</li>
+							<li>support@fruitkha.com</li>
+							<li>+00 111 222 3333</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box pages">
+						<h2 class="widget-title">페이지</h2>
+						<ul>
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'about' %}">홈페이지 소개</a></li>
+							<li><a href="{% url 'selectshop' %}">현재채소가격</a></li>
+							<li><a href="{% url 'shop' %}">미래의채소가격</a></li>
+							<li><a href="{% url 'additionalfactors' %}">재미로 알아보는 채소가격</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-box subscribe">
+						<h2 class="widget-title">구독</h2>
+						<p>싼걸비걸의 최신 소식을 받고 싶으면 <br/>구독하세요.</p>
+						<form id="sub">
+							<input type="email" placeholder="Email">
+							<button type="submit"><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end footer -->
+
+	<!-- copyright -->
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12">
+					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.</p>
+				</div>
+<!--				<div class="col-lg-6 text-right col-md-12">-->
+<!--					<div class="social-icons">-->
+<!--						<ul>-->
+<!--							<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>-->
+<!--							<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>-->
+<!--							<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>-->
+<!--							<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>-->
+<!--							<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
+			</div>
+		</div>
+	</div>
+	<!-- end copyright -->
+<!-- jquery -->
+	<script src="{% static 'assets/js/jquery-1.11.3.min.js' %}"></script>
+	<!-- bootstrap -->
+	<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+	<!-- count down -->
+	<script src="{% static 'assets/js/jquery.countdown.' %}"></script>
+	<!-- isotope -->
+	<script src="{% static 'assets/js/jquery.isotope-3.0.6.min.js' %}"></script>
+	<!-- waypoints -->
+	<script src="{% static 'assets/js/waypoints.js' %}"></script>
+	<!-- owl carousel -->
+	<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+	<!-- magnific popup -->
+	<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- mean menu -->
+	<script src="{% static 'assets/js/jquery.meanmenu.min.js' %}"></script>
+	<!-- sticker js -->
+	<script src="{% static 'assets/js/sticker.js' %}"></script>
+	<!-- main js -->
+	<script src="{% static 'assets/js/main.js' %}"></script>
+	<script>sub
+	$(document).ready(function() {
+		$('#sub').click(function () {
+			alert('구독 완료')
+		})})
+	</script>
+</body>
+</html>

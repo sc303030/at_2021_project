@@ -1,0 +1,251 @@
+{% include 'finalApp/header.html' %}
+{% block content %}
+{% load static %}
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>We sale fresh fruits</p>
+						<h1>About Us</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- featured section -->
+	<div class="feature-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<div class="featured-text">
+						<h2 class="pb-3"><span class="orange-text">싼걸비걸</span>의 시작</h2>
+						<h6>채소, 적절한 가격에 먹고 있을까?</h6>
+						<div class="section-title">
+							<p> &nbsp;기후 환경에 따라 채소 가격의 등락이 심하다는 것은 누구나 아는 사실입니다. 그런데 유독 우리나라에서 채소와 과일 가격의 급등락 폭이 너무 크고 횟수가 잦다고 합니다. 왜 그럴까요?<br>
+								가격 결정이 거의 송파 가락시장 한 곳에서 경매로 이뤄지고, 거대 자본을 가진 도매상인들이 높은 유통 수수료를 받아내고, 표준화된 농산물 가격이 없기 때문이었습니다.<br>
+							<P>거대한 시스템이 지배한 현 상황을 한 번에 바꿀 수는 없지만, 소비자에게 다양한 곳의 채소 가격을 알리고 곳곳의 가격 차이가 큰 것을 알게 된다면, 변화의 시작이 되지 않을까 하는 생각이 들었습니다. </P>
+						</div>
+						<h5 style="margin-top: -35px;">소비자와 농업을 살리는 농산물 가격 알림 페이지, <span class="orange-text">싼걸비걸</span>에 오신 걸 환영합니다.</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="cart-banner pt-100 pb-100">
+    	<div class="container">
+        	<div class="row">
+                <!--Content Column-->
+                <div class="content-column col-lg-12">
+
+				<div class="col-lg-12 col-md-10 mb-5 mb-md-5">
+					<div class="row">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/icons/farmer.png' %}" class="img-responsive" >
+						</div>
+						<div class="col-lg-10 align-self-center">
+							<h3>우리 동네 채소는 <span class="orange-text">싼</span> 걸까? 옆 동네는 <span class="orange-text">비싼</span> 걸까?</h3>
+							<p>서울 시민이라면, 시장이 싼지 마트가 싼지 한 눈에 알아보세요!<br>
+								빅데이터로 보는 채소 평균값과 장 볼 때의 채소 값은 얼마나 차이날까요?<br>
+								당신이 사는 지역보다 더 싸게 파는 곳은 어디인지, 피싸게 파는 곳은 어디인지도 알 수 있답니다.<br>
+								싼걸비걸 페이지 한 번이면 당신은 이미 스마트 컨슈머!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-10 mb-5 mb-md-5 mt-150">
+					<div class="row">
+						<div class="col-lg-10 align-self-center text-right">
+							<h3><span class="orange-text">오늘</span> 장보러 갈까? <span class="orange-text">내일</span> 갈까?</h3>
+							<p>앞으로의 채소 가격이 궁금하시다면 <a href="{% url 'shop' %}"><span class="orange-text">[미래의 채소가격]</span></a> 카테고리를 선택해보세요!<br>
+								채소별로 앞으로의 가격 추이와 예상 가격, 그리고 가격 형성에 영향을 끼치는 변수들도 알아볼 수 있습니다!<br></p>
+						</div>
+						<div class="col-lg-2 ">
+							<img src="{% static 'assets/img/icons/consumer.png' %}" class="img-responsive">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-10 mb-5 mb-md-5 mt-150">
+					<div class="row">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/icons/harvest.png' %}" class="img-responsive">
+						</div>
+						<div class="col-lg-10 align-self-center">
+							<h3><span class="orange-text">모두</span>를 위한 우리나라 농업 정보</h3>
+							<p>싼걸비걸에서는 우리나라 농업의 상황과 실태를 알리고자 합니다.<br>
+								더 알아보기 페이지에서 농업 관련 뉴스와 유통 과정의 고질적인 문제, 그리고 각 채소별 가격 변동 정도를 알아보세요.<br/>
+								당신의 관심이 농부를 살리고, 농업을 살리며, 대한민국을 빛나게 합니다.</p>
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-12 col-md-10 mb-5 mb-md-5 mt-150">
+					<div class="row">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/icons/vegi.png' %}" class="img-responsive">
+						</div>
+						<div class="col-lg-10 align-self-center">
+							<h3><span class="orange-text">싼걸비걸</span> 페이지가 주목하는 5대 채소</h3>
+							<p>싼걸비걸에서는 5개의 채소를 선택하여 정보를 제공하고 있습니다.<br/>
+								바로 무, 배추, 양파, 상추, 오이 인데요. 이 채소들은 1년 365일 내내 마트와 시장에서 동시에 판매하는 채소들입니다.<br/>
+								언제나 우리 밥상에 올라오는 채소들인 것이죠.  싼걸비걸에서 사용한 채소들을 더 자세하게 알아보세요!</p>
+						</div>
+						<div class="row" style="margin-left: 80px; margin-top: 40px;">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/products/Radish-re.png' %}"></div>
+						<div class="col-lg-10 align-self-center">
+							<p><h5>무  (국내산, 1개)</h5>
+							무는 우리나라에서 세번째로 소비량이 많은 채소입니다.  무 또한 봄무, 고랭지무, 가을무, 월동무로
+							다양한 종류가<br/> 있습니다만 싼걸비걸 페이지에서는 구분을 두지 않고 데이터를 수집하였습니다.
+							</p>
+						</div>
+						</div>
+						<div class="row" style="margin-left: 80px; margin-top: 30px;">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/products/cabbage-re.png' %}"></div>
+						<div class="col-lg-10 align-self-center">
+							<p><h5>배추 (국내산, 1포기)</h5>
+							배추는 우리나라에서 가장 소비량이 많은 채소입니다.  배추의 종류도 봄배추, 고랭지배추, 가을배추, 월동배추<br/> 등으로 다양한데요,
+							싼걸비걸 페이지에서는 구분을 두지 않고 데이터를 수집하였습니다.
+							</p>
+						</div>
+						</div>
+						<div class="row" style="margin-left: 80px; margin-top: 30px;">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/products/onion-re.png' %}"></div>
+						<div class="col-lg-10 align-self-center">
+							<p><h5>양파 (국내산, 1kg)</h5>
+							양파는 배추 다음으로 우리나라에서 소비량이 가장 많은 채소입니다. 전 세계적으로 1인당 약 6kg을 소비한다고<br/> 하네요.
+							우리나라에서는 중국산 양파가 많이 수입되어 농민들이 힘겨워하는 작물이기도 합니다.
+							</p>
+						</div>
+						</div>
+						<div class="row" style="margin-left: 80px; margin-top: 30px;">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/products/lettuce-re.png' %}"></div>
+						<div class="col-lg-10 align-self-center">
+							<p><h5>상추 (국내산, 100g)</h5>
+							우주에서 작물을 재배하고 있다는 사실 알고 계시나요? 2015년 8월 10일 국제우주정거장에서 처음으로 수확된
+							작물이<br/> 바로 적상추 입니다. 이처럼 상추는 우주 재배 작물로 꼽힐만큼 잡초 수준의 엄청난 생명력과 길고 긴
+							수명주기를 자랑한다고 하네요.
+							</p>
+						</div>
+						</div>
+						<div class="row" style="margin-left: 80px; margin-top: 30px;">
+						<div class="col-lg-2">
+							<img src="{% static 'assets/img/products/cucumber-re.png' %}"></div>
+						<div class="col-lg-10 align-self-center">
+							<p><h5>오이 (국내산, 1개)</h5>
+							오이는 비교적 약한 햇빛에서도 잘 자라는 직물이라고 합니다. 가시계통, 다다기계통, 취청 이라는 종류가 있으며<br/>
+							다른 작물들과 마찬가지로 싼걸비걸에서는 구분하지 않았습니다.
+							</p>
+						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!-- testimonail-section -->
+	<div class="testimonail-section mt-80 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 text-center">
+					<div class="testimonial-sliders">
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="{% static 'assets/img/avaters/soyeon.png' %}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>SOYEON&nbsp;&nbsp;&nbsp;HAN<span>Data Team</span></h3>
+								<p class="testimonial-body">
+									“ 길이란 걷는 것이 아니라 걸으면서 나아가는 것이 중요하다. <br/>
+									나아가지 못하는 길은 길이 아니다. 길은 모두에게 열려 있지만, <br/>모두가 그 길을 가질 수 있는 것은 아니다.
+										<br/>- 미생 1화 中 <br/>더듬더듬 나아갈 길을 찾아가고 있는 미생 한소연 입니다.“</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="{% static 'assets/img/avaters/mingyeong.png' %}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>MANGO&nbsp;&nbsp;&nbsp;KIM<span>Data Team</span></h3>
+								<p class="testimonial-body">
+									"흰 천과 바람만 있음 어디든 갈 수 있어<br/> - 꽃보다 남자 中<br/>
+어디론가 떠나고싶은 김민경입니다"</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="{% static 'assets/img/avaters/gyeonghyeon.png' %}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>GYEONGHYEON&nbsp;&nbsp;&nbsp;LEE<span>Web Team</span></h3>
+								<p class="testimonial-body">
+									"신이나 ♪ 신이나 ♪ 엣헴 엣헴 신이나 ♪ <br/>
+									펭수와 농구를 사랑하는 <br/>이경현입니다."
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="{% static 'assets/img/avaters/JIWON.png' %}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>JIWON&nbsp;&nbsp;&nbsp;YUN<span>Web Team</span></h3>
+								<p class="testimonial-body">
+									"돈이 최고인 사람, 김치 한 조각에 밥만 먹어도 되는 사람,<br/>
+										다양하지. 옳고 그른 건 없어.
+									다 자기 가치에 따라 살 뿐이야.<br/>
+										그래서 너, 지금 이순간 네 가치에 따라서 행복하냐고.<br/>
+									- 베토벤 바이러스 中<br/>
+									올바른 가치로 행복한 삶을 살고싶은 윤지원입니다."
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+						<div class="single-testimonial-slider">
+							<div class="client-avater">
+								<img src="{% static 'assets/img/avaters/dong_2.png' %}" alt="">
+							</div>
+							<div class="client-meta">
+								<h3>DONGGYUN CHO<span>Team Leader</span></h3>
+								<p class="testimonial-body">
+									"사람인연이라는게.. 굽이굽이 모퉁이를 도는거 같아<br/>
+									모퉁이를 돌기전까진 그 뒤에 누가서있는지 알수 없다가도<br/>
+									모퉁이를 돌아서는 순간 이렇게 또 뜻하지 않게 만나지는거 보면...<br/>
+									그래서 또 재미있는거겠지 사람..인연이라는게<br/>
+									-제빵왕김탁구 中 <br/>
+									함께라서 즐거웠습니다 팀장 조동균입니다."
+								</p>
+								<div class="last-icon">
+									<i class="fas fa-quote-right"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end testimonail-section -->
+
+
+{% endblock %}
+{% include 'finalApp/footer.html' %}
